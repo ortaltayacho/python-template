@@ -1,8 +1,8 @@
 """Count the length of each unique word in a text."""
 
-def count_words(text: str) -> dict[str, int]:
+def count_words(input_text: str) -> dict[str, int]:
     """Return a dictionary mapping each word to its length."""
-    clean_text = ''.join(char.lower() for char in text
+    clean_text = ''.join(char.lower() for char in input_text
                          if char.isalpha() or char.isspace())
 
     words = clean_text.split()
