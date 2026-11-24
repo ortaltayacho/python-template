@@ -9,8 +9,8 @@ def join(*args: list, sep: str = "-") -> list | None:
 
     res = []
 
-    for i in range(len(args)):
-        res.extend(args[i])
+    for i, current_list in enumerate(args):
+        res.extend(current_list)
 
         if i < len(args) - 1:
             res.append(sep)
