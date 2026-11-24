@@ -5,7 +5,6 @@ from collections.abc import Iterable
 
 def interleave(*args: Iterable) -> list:
     """Return elements from multiple iterables in interleaved order."""
-    
     result = []
 
     for group in zip(*args):

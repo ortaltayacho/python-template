@@ -6,8 +6,7 @@ from collections.abc import Iterable, Iterator
 def interleave(*args: Iterable) -> Iterator:
     """Yield elements from multiple iterables in interleaved order."""
     for group in zip(*args):
-        for item in group:
-            yield item
+        yield from group
 
 
 if __name__ == "__main__":
